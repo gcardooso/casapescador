@@ -1,0 +1,46 @@
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <title>Inserir Mercadoria</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+
+
+    </head>
+    <body>
+        <div class="container col-md-5">
+         <h1>Cadastrar Nova Mercadoria</h1>
+         <form id="frmNovaMerc" name="frmNovaMerc" method="POST" action="insMerc.php">
+            <div class="form-group">
+                <label for="lblDescricao">Descrição:</label>
+                <input class="form-control col-md-7" type="text" id="txtDescricao" 
+                    name="txtDescricao" placeholder="Informe a descrição da mercadoria">
+            </div>
+            <div class="form-group">
+                <label for="lblQuantidade">Quantidade:</label>
+                <input class="form-control col-md-7"  type="text" id="txtQuantidade"
+                    name="txtQuantidade" placeholder="Informe a quantidade da mercadoria">
+            </div>
+            <div class="form-group">
+                <label for="lblValor">Valor:</label>
+                <input class="form-control col-md-7" type="text" id="txtValor"
+                name="txtValor" placeholder="Informe o valor da mercadoria">
+            </div>
+            <div class="form-group">
+                <label for="lblFornecedor">Fornecedor:</label>
+                <input class="form-control col-md-7" type="text" id="txtFornecedor"
+                    name="txtFornecedor" placeholder="Informe o fornecedor da marcadoria">
+            </div>
+            <input type="submit" id="btEnviar" name="btEnviar" 
+                     class="btn btn-outline-success btn-lg" value="Gravar">
+            <input type="reset" id="btLimpar" name="btLimpar"
+                     class="btn btn-outline-primary btn-lg" value="Limpar"> 
+            <input type="button" id="bt_Cancel" name="bt_Cancel"
+                     class="btn btn-outline-danger btn-lg" value="Cancelar"
+                     onclick="javascript:location.href='lstMerc.php'">               
+         </form> 
+         
+        </div>
+    </body>
+</html>
